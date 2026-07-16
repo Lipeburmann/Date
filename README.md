@@ -1,2 +1,2 @@
 # Date
-um site de brincadeira so pa tirar uma risadinha🤣
+um site de brincadeira so pra tirar uma risadinha🤣
