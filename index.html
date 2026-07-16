@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- TELA 1: pergunta principal -->
+  <div class="container tela" id="tela1">
+    <h1 class="pergunta">PERGUNTA MASTER?</h1>
+
+    <img src="assets/flork_rosa.jpg" alt="imagem" class="imagem-pergunta" id="imagem">
+
+    <div class="botoes" id="area-botoes">
+      <button id="btn-sim" class="btn btn-sim">Sim</button>
+      <button id="btn-nao" class="btn btn-nao">Não</button>
+    </div>
+  </div>
+
+  <!-- TELA 2: pergunta do encontro (começa escondida) -->
+  <div class="container tela escondida" id="tela2">
+    <h1 class="pergunta">Que bom!  Agora me diz uma coisa...</h1>
+    <p class="subpergunta">Quando a gente pode marcar nosso primeiro encontro?</p>
+
+    <select id="select-data" class="select-data">
+      <option value="" disabled selected>Escolha uma opção</option>
+      <option value="hoje">Hoje mesmo</option>
+      <option value="amanha">Amanhã</option>
+      <option value="fds">Neste fim de semana</option>
+      <option value="proxima-semana">Semana que vem</option>
+      <option value="quando-voce-quiser">Quando você quiser </option>
+    </select>
+
+    <button id="btn-confirmar" class="btn-confirmar">Confirmar</button>
+
+    <p id="resposta" class="resposta"></p>
+  </div>
+
+  <audio id="sad-audio" src="sad_song.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

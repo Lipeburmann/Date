@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    max-width: 420px;
+  }
+  
+  /* esconde a tela que não está ativa */
+  .escondida {
+    display: none;
+  }
+  
+  .pergunta {
+    font-size: 2rem;
+    color: #4a1c2b;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
+  }
+  
+  .subpergunta {
+    font-size: 1.2rem;
+    color: #4a1c2b;
+    margin-bottom: 25px;
+  }
+  
+  .imagem-pergunta {
+    max-width: 280px;
+    width: 60vw;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    margin-bottom: 30px;
+  }
+  
+  .botoes {
+    position: relative;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 14px 34px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-sim {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .btn-sim:hover {
+    background-color: #43a047;
+  }
+  
+  .btn-nao {
+    background-color: #e53950;
+    color: white;
+    transition: left 0.12s ease-out, top 0.12s ease-out, transform 0.15s ease;
+  }
+  
+  .select-data {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid #e53950;
+    background-color: white;
+    color: #4a1c2b;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .btn-confirmar {
+    padding: 12px 30px;
+    font-size: 1.05rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.15s ease;
+  }
+  
+  .btn-confirmar:hover {
+    transform: scale(1.05);
+  }
+  
+  .resposta {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #4a1c2b;
+    font-weight: bold;
+  }
