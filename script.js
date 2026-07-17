@@ -96,27 +96,3 @@ document.addEventListener('DOMContentLoaded', () => {
       btnNao.style.left = Math.min(rect.left, maxX) + 'px';
       btnNao.style.top = Math.min(rect.top, maxY) + 'px';
     });
-  
-    // troca de tela: esconde a tela1 e mostra a tela2
-    btnSim.addEventListener('click', () => {
-      tela1.classList.add('escondida');
-      tela2.classList.remove('escondida');
-    });
-  
-    // lógica da segunda tela (select + confirmar)
-    const select = document.getElementById('select-data');
-    const btnConfirmar = document.getElementById('btn-confirmar');
-    const resposta = document.getElementById('resposta');
-  
-    btnConfirmar.addEventListener('click', () => {
-      if (!select.value) {
-        resposta.textContent = 'Escolhe uma opção aí! 😅';
-        resposta.style.color = '#e53950';
-        return;
-      }
-  
-      const textoEscolhido = select.options[select.selectedIndex].text;
-      resposta.textContent = `Combinado! Nosso encontro vai ser: ${textoEscolhido} 💕`;
-      resposta.style.color = '#2e7d32';
-    });
-  });
