@@ -82,6 +82,7 @@
     background-color: #e53950;
     color: white;
     transition: left 0.12s ease-out, top 0.12s ease-out, transform 0.15s ease;
+    touch-action: none; /* impede o navegador de tratar o toque como scroll/zoom */
   }
   
 
